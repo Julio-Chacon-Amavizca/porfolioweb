@@ -1,0 +1,44 @@
+---
+import ExperienceItem from './ExperienceItem.astro';
+const EXPERIENCIE = [
+  {
+    date: 'Enero 2024 - Mayo 2024',
+    title: 'Desarrollador de software para practicas profesionales   ',
+    description:
+      ' El proyecto consiste en el desarrollo de un sistema web que gestiona usuarios y documentos, utilizando React.js para el front-end y Node.js con Express.js para el back-end, con MongoDB como base de datos. Este sistema incorporando autenticación y autorización mediante JWT. Tecnológias utilizadas: React.js, Node.js, Express.js, MongoDB, JWT, GitHub, Heroku, Visual Studio Code, JavaScript, Typescript, Tailwind, Postman, Sentry, Cypress.',
+    company:
+      'Cámara Mexicana de la Industria de la Construcción, Hermosillo, Sonora.',
+  },
+  {
+    date: 'Junio 2021 - Agosto 2023',
+    title: ' Gerente',
+    company: 'Cinemex, Hermosillo, Sonora.',
+    description:
+      'Responsable de gestionar todas las operaciones diarias del cine, incluyendo el control de inventario y la evaluación del rendimiento operativo y del desempeño del personal. Promueve un ambiente de trabajo colaborativo, seguro y saludable. Asegura el cumplimiento de las políticas internas y las normativas vigentes, y controla la calidad de los procesos y servicios ofrecidos. Identifica deficiencias en los procesos de trabajo y propone mejoras, además de planificar, distribuir y hacer seguimiento de las tareas del equipo.',
+  },
+  {
+    date: 'Enero 2022 - Agosto 2022',
+    title: 'Desarrollador de software freelance',
+    company: 'Ganaderia Alvarez, Ures, Sonora.',
+    description:
+      'El proyecto consiste en el desarrollo de una aplicación de escritorio para la gestión y cuidado de ganado y establos. Ademas de un punto de venta y gestión de inventario. Utilizando las siguientes herramientas y tecnologías: Visual Studio, C#, MySQL y GitHub.',
+  },
+  {
+    date: 'Agosto 2021 - Diciembre 2021',
+    title: 'Desarrollador de software para servicio social',
+    company: 'Universidad Tecnológica de Hermosillo, Hermosillo, Sonora.',
+    description:
+      'Se desarrollo un programa para agilizar el proceso de revisión y expedición de documentación para la realización del servicio social. Utilizando las siguientes herramientas y tecnologías: Visual Studio Code, GitHub, HTML, CSS, PHP, LARAVEL, MySQL, Node, JavaScript y Postman.',
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

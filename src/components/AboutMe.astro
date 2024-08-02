@@ -1,0 +1,42 @@
+---
+const personalImageAlt = 'Julio César';
+---
+
+<article
+  class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row"
+>
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+  >
+    <p>
+      Me llamo Julio César, pero mis amigos me dicen solo Julio, aunque también
+      pueden decirme Chacón. Empecé en la programación con las pequeñas y
+      limitadas computadoras de la primaria a la que asistía. Tenía 11 años, y
+      gracias a que mi padre era maestro de cómputo, nació este amor por la
+      tecnología. Actualmente estoy<strong>
+        interesado en la creación de aplicaciones web, moviles y videojuegos 2D</strong
+      >.
+    </p>
+
+    <p>
+      Entre mis éxitos destaco que durante la universidad, <strong
+        >ayudé a mis compañeros a entender el mundo de la programación
+        realizando pequeños talleres en bibliotecas o en canales de voz como
+        discord. <em class="italic"
+          >Llevando acabo practicas de programación y redes</em
+        ></strong
+      >. Creo que todos podemos aportar de maneras diferentes para crear cosas
+      increíbles. Es por eso que me gusta compartir mi conocimiento y escuchar a
+      los demás.
+    </p>
+  </div>
+
+  <img
+    width="200"
+    height="200"
+    src="/meJulioCesar.webp"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
+</article>
