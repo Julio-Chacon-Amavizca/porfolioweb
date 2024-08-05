@@ -9,6 +9,7 @@ import HtmlIcon from './icons/HtmlIcon.astro';
 import PhaserIcon from './icons/PhaserIcon.astro';
 import LlamaIcon from './icons/LlamaIcon.astro';
 import ReactIcon from './icons/ReactIcon.astro';
+import ExpoIcon from './icons/ExpoIcon.astro';
 
 const TAGS = {
   NEXT: {
@@ -46,9 +47,22 @@ const TAGS = {
     class: 'bg-blue-500 text-white',
     icon: ReactIcon,
   },
+  EXPO: {
+    name: 'Expo',
+    class: 'bg-slate-500/90 text-black',
+    icon: ExpoIcon,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: 'React Native Metacritic App',
+    description:
+      'Este codigo es un ejemplo de una aplicación realizada con React Native y Expo. Esta enfocada a explorar las herramientas de desarrollo de Expo, utilizando los emuladores de Android Studio y las aplicaciones de Expo para ver el desarrollo tanto en dispositivos moviles con Andriod y iOS.',
+    github: 'https://github.com/Julio-Chacon-Amavizca/react-native-example',
+    image: '/projects/reactnativemetacriticapp.webp',
+    tags: [TAGS.REACT, TAGS.EXPO],
+  },
   {
     title: 'Mario bros Game Phaser',
     description:
